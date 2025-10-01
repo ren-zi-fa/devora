@@ -1,0 +1,31 @@
+@reference "../index.css";
+
+.menuList {
+  @apply flex gap-6;
+}
+
+.menuItem {
+  @apply font-medium transition-colors duration-200 text-[var(--text-nav)];
+}
+
+.menuItem:hover {
+  @apply text-purple-400
+}
+
+.menuItem:active {
+  color: var(--main-color-dark);
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out forwards;
+}

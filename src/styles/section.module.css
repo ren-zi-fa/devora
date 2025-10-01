@@ -1,0 +1,41 @@
+@reference "../index.css";
+
+.heroSection {
+  @apply relative bg-gradient-to-br z-10 from-[var(--main-color)] to-indigo-700 text-white rounded-b-2xl p-8 md:p-16 flex flex-col items-start gap-6;
+}
+
+.heroTitle {
+  @apply font-[costum] text-4xl md:text-6xl font-bold;
+}
+
+.heroHighlight {
+  @apply text-[var(--warning-color)];
+}
+
+.heroDescription {
+  @apply max-w-4xl text-lg md:text-4xl;
+}
+
+.heroTagline {
+  @apply text-2xl md:text-3xl font-semibold;
+}
+
+.heroButtons {
+  @apply flex flex-wrap gap-4;
+}
+
+.bgDecorationYellow {
+  @apply absolute -bottom-10 -right-2 w-52 h-52 bg-[var(--warning-color)] rounded-full opacity-30 blur-3xl;
+}
+
+.bgDecorationIndigo {
+  @apply absolute -top-10 -left-10 w-56 h-56 bg-indigo-600 rounded-full opacity-20 blur-2xl;
+}
+
+.title {
+  @apply mt-2  font-bold underline text-lg md:text-2xl text-[var(--text-color)];
+}
+
+.desc {
+  @apply text-center text-sm md:text-lg mt-1;
+}

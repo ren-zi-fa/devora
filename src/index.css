@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "PT Serif", serif;
+  --font-display: "Arial", serif;
+}
+@font-face {
+  font-family: "costum";
+  src: url("/fonts/Helvetica-Oblique.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "costum";
+  src: url("/fonts/Helvetica-Oblique.tff") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "costum-2";
+  src: url("/fonts/Helvetica-BoldOblique.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "costum-2";
+  src: url("/fonts/Helvetica-BoldOblique.tff") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --main-color: #6d93e4; /* Biru utama (Blue 600 Tailwind) */
+  --second-color: #60a5fa; /* Biru terang (Blue 400) */
+  --background-color: #f9fafb; /* Abu-abu sangat terang */
+  --surface-color: #f9f7f7; /* Putih untuk card/panel */
+  --text-color: #f3f4f5; /* Teks terang */
+  --text-nav: #e4e9f6;
+  --border-color: #e5e7eb; /* Border abu-abu terang */
+  --third-color: #280060;
+  --warning-color: #f5cb23;
+  --footer-color: #280060;
+}
+
+[data-theme="dark"] {
+  --text-color: #d2dbf0; /* Teks utama (abu gelap) */
+  --background-color: #1f2937; /* Abu gelap */
+  --surface-color: #111827; /* Hampir hitam */
+  --border-color: #42044d; /* Border abu gelap */
+  --text-nav: #cdd2de;
+  --second-color: #0b4387; /* Biru terang (Blue 400) */
+  --main-color: #0c89ef; /* Biru utama (Blue 600 Tailwind) */
+  --footer-color: #fcfaff;
+}
+
+html,
+body {
+  @apply min-h-screen bg-[var(--background-color)] text-[var(--text-color)] font-sans p-0;
+  background: linear-gradient(
+    to top,
+    var(--main-color) 0%,
+    var(--surface-color) 100%
+  );
+}
+.wrapper {
+  @apply max-w-7xl mx-auto p-4;
+}
+
+.card {
+  @apply font-[costum-1] text-xl mx-auto px-6 py-8 md:py-12 bg-[var(--main-color)] shadow-md rounded-2xl;
+}
+
+h3 {
+  @apply text-2xl md:text-2xl font-semibold mb-2 underline;
+}
+
+h1 {
+  @apply font-[costum] text-left mb-3 md:mb-7 text-xl md:text-center md:text-3xl text-[var(--warning-color)];
+}
+
+/* Main container for the entire footer */
+.footer {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  @apply px-8 py-16 md:px-16 lg:px-24;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Section for the newsletter call-to-action */
+.newsletterSection {
+  @apply flex flex-col md:flex-row justify-between items-start md:items-center mb-16 pb-8;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.newsletterTitle {
+  @apply text-3xl font-bold mb-4 md:mb-0;
+  color: var(--main-color);
+}
+
+.newsletterForm {
+  @apply flex items-center w-full max-w-sm;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  @apply rounded-full overflow-hidden shadow-sm;
+}
+
+.newsletterInput {
+  @apply w-full py-3 px-6 bg-transparent focus:outline-none;
+  color: var(--text-color);
+}
+
+.newsletterInput::placeholder {
+  color: var(--text-nav);
+}
+
+.newsletterButton {
+  background-color: var(--main-color);
+  color: white; /* Teks pada tombol utama biasanya putih/terang */
+  @apply p-3 rounded-full m-1 hover:opacity-90 transition-opacity;
+}
+
+/* Main grid for all the footer links and info */
+.mainGrid {
+  @apply grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-x-8 gap-y-12;
+}
+
+.column {
+  @apply flex flex-col;
+}
+
+.columnTitle {
+  @apply font-semibold text-base mb-4;
+  color: var(--text-color);
+}
+
+.linkList {
+  @apply flex flex-col gap-3;
+}
+
+.linkItem a,
+.officeInfo p {
+  color: var(--footer-color);
+  @apply text-sm transition-colors duration-200;
+}
+
+.linkItem a:hover {
+  color: var(--main-color);
+}
+
+.socialLinks {
+  @apply flex gap-4 mt-2;
+}
+
+.socialIcon {
+  color: var(--footer-color);
+  @apply w-6 h-6 transition-colors duration-200;
+}
+
+.socialIcon:hover {
+  color: var(--main-color);
+}
+
+/* Bottom bar for copyright notice */
+.bottomBar {
+  @apply mt-16 pt-8 text-center text-xs;
+  border-top: 1px solid var(--border-color);
+  color: var(--footer-color);
+}
