@@ -1,27 +1,57 @@
 import styles from "@/styles/header.module.css";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
-export function Navbar(): React.ReactNode {
+type NavbarItems = {
+  title: string;
+  href: string;
+  ref: React.RefObject<HTMLDivElement | null> | null;
+};
+interface NavProps {
+  refService: React.RefObject<HTMLDivElement | null>;
+  refExpertise: React.RefObject<HTMLDivElement | null>;
+  refWork: React.RefObject<HTMLDivElement | null>;
+}
+export function Navbar({
+  refService,
+  refExpertise,
+  refWork,
+}: NavProps): React.ReactNode {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+
   const toggleMenu = () => setIsOpen(!isOpen);
+  const { t, i18n } = useTranslation();
 
-  const menuItems = ["Project", "Service", "How we work", "Team", "About us"];
-  useEffect(() => {
-    const handleScrol = () => {
-      setScrolled(window.scrollY > 20);
-    };
+  // this is must same with key i18n.ts
+  const navbarItems: NavbarItems[] = [
+    { title: "home", href: "#", ref: null },
+    { title: "about", href: "#", ref: null },
+    { title: "services", href: "#", ref: refService },
+    { title: "OurWork", href: "#", ref: refWork },
+    { title: "expertise", href: "#", ref: refExpertise },
+  ];
 
-    window.addEventListener("scroll", handleScrol);
-    window.removeEventListener("scroll", handleScrol);
-  }, []);
+  type Lang = "en" | "id";
+
+  const changeLanguage = (lang: Lang) => {
+    i18n.changeLanguage(lang);
+  };
+  const scrollTo = (
+    e: React.MouseEvent<HTMLButtonElement>,
+    ref: React.RefObject<HTMLDivElement | null> | null
+  ) => {
+    e.preventDefault();
+    ref?.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+    });
+    setIsOpen(!isOpen);
+  };
 
   return (
     <header
-      className={`shadow-md z-30 sticky top-0 transition-colors duration-300 ${
-        scrolled ? "bg-[var(--main-color)] " : "bg-[var(--second-color)]"
-      }`}
+      className={`shadow-md z-30 sticky top-0 transition-colors duration-300 bg-[var(--second-color)]`}
     >
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Logo */}
@@ -30,13 +60,23 @@ export function Navbar(): React.ReactNode {
         {/* Desktop Navigation */}
         <nav className="hidden md:block text-lg">
           <ul className="flex space-x-8">
-            {menuItems.map((item) => (
-              <li key={item}>
-                <a href="#" className={clsx(styles.menuItem)}>
-                  {item}
-                </a>
+            {navbarItems.map((item, i) => (
+              <li key={i}>
+                <button
+                  onClick={(e) => scrollTo(e, item.ref)}
+                  className={clsx(styles.menuItem)}
+                >
+                  {t(`navbar.${item.title}`)}
+                </button>
               </li>
             ))}
+            {/* <button onClick={() => changeLanguage("en")}>EN</button>
+          <button onClick={() => changeLanguage("id")}>ID</button> */}
+
+            <select name="" id="" className="text-xl focus:outline-none">
+              <option value="">🇺🇸</option>
+              <option value="">🇮🇩</option>
+            </select>
           </ul>
         </nav>
 
@@ -77,11 +117,14 @@ export function Navbar(): React.ReactNode {
       {isOpen && (
         <nav className="md:hidden bg-[var(--main-color)] z-50 shadow-lg absolute top-full left-0 w-full animate-slideDown ">
           <ul className="flex flex-col space-y-4 p-4">
-            {menuItems.map((item) => (
-              <li key={item}>
-                <a href="#" className={clsx(styles.menuItem, "block w-full")}>
-                  {item}
-                </a>
+            {navbarItems.map((item, i) => (
+              <li key={i}>
+                <button
+                  onClick={(e) => scrollTo(e, item.ref)}
+                  className={clsx(styles.menuItem)}
+                >
+                  {t(`navbar.${item.title}`)}
+                </button>
               </li>
             ))}
           </ul>

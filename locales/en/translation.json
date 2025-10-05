@@ -1,0 +1,38 @@
+{
+  "expertise": {
+    "chat": {
+      "title": "Messaging & Communication",
+      "desc": "We build secure and user-friendly messaging platforms that make communication seamless and efficient."
+    },
+    "fintech": {
+      "title": "Fintech Solutions",
+      "desc": "From digital wallets to payment gateways, we create reliable fintech applications that simplify financial transactions."
+    },
+    "ecom": {
+      "title": "E-commerce Platforms",
+      "desc": "We design and develop e-commerce systems that help businesses reach more customers and increase sales."
+    },
+    "edu": {
+      "title": "Education & E-Learning",
+      "desc": "We build digital solutions for schools, universities, and online learning platforms to enhance the education experience."
+    },
+    "health": {
+      "title": "Healthcare & Telemedicine",
+      "desc": "We provide technology solutions that improve healthcare access through telemedicine and digital patient management."
+    }
+  },
+  "services": {
+    "discovery": {
+      "title": "Product Discovery",
+      "desc": "We’ve worked with many startups, armed only with an idea and endless enthusiasm. And we’ve helped big companies with equally big ambitions too."
+    },
+    "design": {
+      "title": "Product Design",
+      "desc": "This is what DECODE was founded on, and we love it. Messaging apps, social platforms, mobile banking – we’ve got the experience for any challenge."
+    },
+    "engineering": {
+      "title": "Software Engineering",
+      "desc": "We build software with high standards, from simple apps to complex systems you can rely on."
+    }
+  }
+}

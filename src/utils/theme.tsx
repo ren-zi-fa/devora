@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import classes from "@/styles/button.module.css";
-export default function ThemeToggle() {
+export default function ThemeToggle({ size }: { size: string }) {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function ThemeToggle() {
       {theme === "light" ? (
         <svg
           viewBox="0 0 1024 1024"
-          className="w-10 h-10"
+          className={`${size}`}
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -44,7 +44,7 @@ export default function ThemeToggle() {
       ) : (
         <svg
           viewBox="0 0 24 24"
-          className="w-10 h-10"
+          className={`${size}`}
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
         >

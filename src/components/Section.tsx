@@ -18,7 +18,7 @@ export function HeroSection() {
       </p>
       <h2 className={`${styles.heroTagline} flex items-center `}>
         <span>Bangun Solusi Digital yang Hebat</span>
-        <ThemeToggle />
+        <ThemeToggle size="w-12" />
       </h2>
 
       <div className={styles.heroButtons}>
@@ -63,7 +63,11 @@ export function HowWeWork() {
   );
 }
 
-export function FieldExpertise() {
+export function FieldExpertise({
+  ref,
+}: {
+  ref: React.RefObject<HTMLDivElement | null>;
+}) {
   const [visibleCount, setVisibleCount] = useState(4);
 
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
@@ -80,7 +84,7 @@ export function FieldExpertise() {
         </span>
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6" ref={ref}>
         {itemsToShow.map((item, i) => (
           <div
             key={i}
@@ -111,10 +115,14 @@ export function FieldExpertise() {
   );
 }
 
-export function OurWork() {
+export function OurWork({
+  ref,
+}: {
+  ref: React.RefObject<HTMLDivElement | null>;
+}) {
   return (
     <section className="bg-[var(--third-color)] p-4 text-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto" ref={ref}>
         <h1>
           Our Work
           <span className="text-xs md:text-xl block text-[var(--text-color)]">
@@ -136,12 +144,16 @@ export function OurWork() {
   );
 }
 
-export function Services() {
+export function Services({
+  ref,
+}: {
+  ref: React.RefObject<HTMLDivElement | null>;
+}) {
   return (
     <section className="p-4 max-w-7xl mx-auto">
       <div className="text-5xl font-bold mb-6 text-left">Our Services</div>
 
-      <div className="flex flex-col gap-4 max-w-4xl mx-auto">
+      <div className="flex flex-col gap-4 max-w-4xl mx-auto" ref={ref}>
         {services.map((item, i) => (
           <div
             className="flex flex-row p-4 border-t text-sm md:text-xl  "

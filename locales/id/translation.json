@@ -1,0 +1,38 @@
+{
+  "expertise": {
+    "chat": {
+      "title": "Pesan & Komunikasi",
+      "desc": "Kami membangun platform pesan yang aman dan mudah digunakan untuk membuat komunikasi lebih lancar dan efisien."
+    },
+    "fintech": {
+      "title": "Solusi Fintech",
+      "desc": "Mulai dari dompet digital hingga payment gateway, kami membuat aplikasi fintech yang andal untuk mempermudah transaksi keuangan."
+    },
+    "ecom": {
+      "title": "Platform E-commerce",
+      "desc": "Kami merancang dan mengembangkan sistem e-commerce yang membantu bisnis menjangkau lebih banyak pelanggan dan meningkatkan penjualan."
+    },
+    "edu": {
+      "title": "Pendidikan & E-Learning",
+      "desc": "Kami membangun solusi digital untuk sekolah, universitas, dan platform pembelajaran online guna meningkatkan pengalaman belajar."
+    },
+    "health": {
+      "title": "Kesehatan & Telemedisin",
+      "desc": "Kami menyediakan solusi teknologi yang meningkatkan akses layanan kesehatan melalui telemedisin dan manajemen pasien digital."
+    }
+  },
+  "services": {
+    "discovery": {
+      "title": "Penemuan Produk",
+      "desc": "Kami telah bekerja dengan banyak startup yang hanya berbekal ide dan semangat besar. Kami juga membantu perusahaan besar dengan ambisi yang sama besar."
+    },
+    "design": {
+      "title": "Desain Produk",
+      "desc": "Inilah yang menjadi dasar DECODE, dan kami sangat menyukainya. Aplikasi pesan, platform sosial, mobile banking – kami punya pengalaman untuk semua tantangan."
+    },
+    "engineering": {
+      "title": "Rekayasa Perangkat Lunak",
+      "desc": "Kami membangun perangkat lunak dengan standar tinggi, mulai dari aplikasi sederhana hingga sistem kompleks yang dapat diandalkan."
+    }
+  }
+}

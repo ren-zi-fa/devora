@@ -19,66 +19,66 @@ type Services = Omit<Expertise, "img">;
 
 export const expertise: Expertise[] = [
   {
-    title: "Messaging & Communication",
-    desc: "We build secure and user-friendly messaging platforms that make communication seamless and efficient.",
+    title: "Pesan & Komunikasi",
+    desc: "Kami membangun platform pesan yang aman dan mudah digunakan untuk membuat komunikasi lebih lancar dan efisien.",
     img: chatSvg,
   },
   {
-    title: "Fintech Solutions",
-    desc: "From digital wallets to payment gateways, we create reliable fintech applications that simplify financial transactions.",
+    title: "Solusi Fintech",
+    desc: "Mulai dari dompet digital hingga payment gateway, kami membuat aplikasi fintech yang andal untuk mempermudah transaksi keuangan.",
     img: fintech,
   },
   {
-    title: "E-commerce Platforms",
-    desc: "We design and develop e-commerce systems that help businesses reach more customers and increase sales.",
+    title: "Platform E-commerce",
+    desc: "Kami merancang dan mengembangkan sistem e-commerce yang membantu bisnis menjangkau lebih banyak pelanggan dan meningkatkan penjualan.",
     img: ecom,
   },
   {
-    title: "Education & E-Learning",
-    desc: "We build digital solutions for schools, universities, and online learning platforms to enhance the education experience.",
+    title: "Pendidikan & E-Learning",
+    desc: "Kami membangun solusi digital untuk sekolah, universitas, dan platform pembelajaran online guna meningkatkan pengalaman belajar.",
     img: edu,
   },
   {
-    title: "Healthcare & Telemedicine",
-    desc: "We provide technology solutions that improve healthcare access through telemedicine and digital patient management.",
+    title: "Kesehatan & Telemedisin",
+    desc: "Kami menyediakan solusi teknologi yang meningkatkan akses layanan kesehatan melalui telemedisin dan manajemen pasien digital.",
     img: health,
   },
 ];
 
 export const works: Works[] = [
   {
-    title: "Lorem ipsum dolor sit amet consectetur, adipisicing ",
-    desc: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nihil ratione numquam tempore impedit quo illo amet atque commodi error reprehenderit, quidem officia voluptatem placeat earum veniam ab corporis. Quam, ratione aliquid ipsam repellat magni quos consectetur minima incidunt obcaecati eius commodi nihil?",
+    title: "Proyek Inovasi Digital",
+    desc: "Kami mengembangkan solusi digital yang berfokus pada kebutuhan pengguna dengan teknologi terkini untuk memberikan pengalaman terbaik.",
     img: work1,
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur, adipisicing ",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nihil ratione numquam tempore impedit quo illo amet atque commodi error reprehenderit, quidem officia voluptatem placeat earum veniam ab corporis. Quam, ratione aliquid ipsam repellat magni quos consectetur minima incidunt obcaecati eius commodi nihil?",
+    title: "Transformasi Bisnis",
+    desc: "Kami membantu perusahaan beradaptasi dengan era digital melalui sistem yang efisien, aman, dan mudah digunakan.",
     img: work2,
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur, adipisicing ",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nihil ratione numquam tempore impedit quo illo amet atque commodi error reprehenderit, quidem officia voluptatem placeat earum veniam ab corporis. Quam, ratione aliquid ipsam repellat magni quos consectetur minima incidunt obcaecati eius commodi nihil?",
+    title: "Pengembangan Produk Modern",
+    desc: "Kami merancang dan membangun produk digital yang scalable dan siap mendukung pertumbuhan bisnis jangka panjang.",
     img: work3,
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur, adipisicing ",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nihil ratione numquam tempore impedit quo illo amet atque commodi error reprehenderit, quidem officia voluptatem placeat earum veniam ab corporis. Quam, ratione aliquid ipsam repellat magni quos consectetur minima incidunt obcaecati eius commodi nihil?",
+    title: "Kolaborasi Kreatif",
+    desc: "Kami bekerja sama dengan klien untuk menciptakan solusi unik yang sesuai dengan visi, misi, dan tujuan bisnis mereka.",
     img: work4,
   },
 ];
 
 export const services: Services[] = [
   {
-    title: "Product Discovery",
-    desc: "We’ve worked with many startups, armed only with an idea and endless enthusiasm. And we’ve helped big companies with equally big ambitions too.",
+    title: "Penemuan Produk",
+    desc: "Kami telah bekerja dengan banyak startup yang hanya berbekal ide dan semangat besar. Kami juga membantu perusahaan besar dengan ambisi yang sama besar.",
   },
   {
-    title: "Product Design",
-    desc: "This is what DECODE was founded on, and we love it. Messaging apps, social platforms, mobile banking – we’ve got the experience for any challenge.",
+    title: "Desain Produk",
+    desc: "Inilah yang menjadi dasar DECODE, dan kami sangat menyukainya. Aplikasi pesan, platform sosial, mobile banking – kami punya pengalaman untuk semua tantangan.",
   },
   {
-    title: "Software Engineering",
-    desc: "This is what DECODE was founded on, and we love it. Messaging apps, social platforms, mobile banking – we’ve got the experience for any challenge.",
+    title: "Rekayasa Perangkat Lunak",
+    desc: "Kami membangun perangkat lunak dengan standar tinggi, mulai dari aplikasi sederhana hingga sistem kompleks yang dapat diandalkan.",
   },
 ];
