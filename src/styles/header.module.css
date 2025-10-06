@@ -9,13 +9,12 @@
 }
 
 .menuItem:hover {
-  @apply text-purple-400
+  @apply text-purple-400;
 }
 
 .menuItem:active {
   color: var(--main-color-dark);
 }
-
 @keyframes slideDown {
   0% {
     opacity: 0;
@@ -26,6 +25,8 @@
     transform: translateY(0);
   }
 }
-.animate-slideDown {
+
+.navmobile {
+  @apply md:hidden bg-[var(--main-color)] pb-20 z-50 shadow-lg absolute top-full left-0 w-full;
   animation: slideDown 0.3s ease-out forwards;
 }

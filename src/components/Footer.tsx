@@ -1,10 +1,6 @@
 import ThemeToggle from "@/utils/theme";
 
 const footerData = {
-  offices: [
-    { country: "Germany", address: "Hammer Straße 19, Düsseldorf" },
-    { country: "Croatia", address: "Radnicka cesta 47, Zagreb" },
-  ],
   links: [
     {
       title: "Explore",
@@ -73,21 +69,8 @@ const footerData = {
 export default function Footer() {
   return (
     <footer className="footer">
-      {/* Newsletter */}
-
       {/* Main Grid */}
       <div className="mainGrid">
-        {/* Offices */}
-        <div className="column">
-          <h4 className="columnTitle">Offices</h4>
-          {footerData.offices.map((office, idx) => (
-            <div key={idx} className="officeInfo mb-4">
-              <p className="font-semibold">{office.country}</p>
-              <p>{office.address}</p>
-            </div>
-          ))}
-        </div>
-
         {/* Links */}
         {footerData.links.map((section, idx) => (
           <div className="column" key={idx}>
@@ -103,7 +86,7 @@ export default function Footer() {
         ))}
       </div>
       <div className="bottomBar">
-        <p>© {new Date().getFullYear()} Your Company. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Devora. All rights reserved.</p>
         <div className="socialLinks justify-center mt-4 items-center">
           <a href="#" aria-label="LinkedIn">
             <svg
@@ -125,7 +108,7 @@ export default function Footer() {
               <path d="M24 4.56a9.93 9.93 0 0 1-2.82.78A4.92 4.92 0 0 0 23.34 3a9.86 9.86 0 0 1-3.13 1.19 4.92 4.92 0 0 0-8.38 4.48A13.97 13.97 0 0 1 1.67 3.15a4.91 4.91 0 0 0 1.52 6.56A4.92 4.92 0 0 1 .96 9.1v.06a4.92 4.92 0 0 0 3.95 4.82 4.93 4.93 0 0 1-2.22.08 4.92 4.92 0 0 0 4.59 3.42A9.87 9.87 0 0 1 0 21.54a13.93 13.93 0 0 0 7.55 2.21c9.05 0 14-7.5 14-14 0-.21 0-.42-.02-.63A10.06 10.06 0 0 0 24 4.56z" />
             </svg>
           </a>
-        <ThemeToggle size="w-8"/>
+          <ThemeToggle size="w-8" />
         </div>
       </div>
     </footer>

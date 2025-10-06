@@ -1,5 +1,20 @@
 {
+  "navbar": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "services": "Layanan",
+    "OurWork": "Pekerjaan Kami",
+    "expertise": "Keahlian Kami"
+  },
+  "section": {
+    "main_line": "kami membantu perusahaan membangun software inovatif yang skalabel dan berdampak.",
+    "second_line": "Bangun Solusi Digital yang Hebat",
+    "button": "Ayo Ngobrol",
+    "sub_button": "Lihat Pekerjaan Kami"
+  },
   "expertise": {
+    "head": "Bidang Keahlian Kami",
+    "desc": "Kami secara konsisten mengeksplorasi berbagai industri dan tantangan, termasuk…",
     "chat": {
       "title": "Pesan & Komunikasi",
       "desc": "Kami membangun platform pesan yang aman dan mudah digunakan untuk membuat komunikasi lebih lancar dan efisien."
@@ -22,17 +37,42 @@
     }
   },
   "services": {
+    "head": "layanan kami",
     "discovery": {
       "title": "Penemuan Produk",
       "desc": "Kami telah bekerja dengan banyak startup yang hanya berbekal ide dan semangat besar. Kami juga membantu perusahaan besar dengan ambisi yang sama besar."
     },
     "design": {
       "title": "Desain Produk",
-      "desc": "Inilah yang menjadi dasar DECODE, dan kami sangat menyukainya. Aplikasi pesan, platform sosial, mobile banking – kami punya pengalaman untuk semua tantangan."
+      "desc": "Kami menciptakan desain yang intuitif dan menarik secara visual, yang mengubah ide menjadi pengalaman digital berpusat pada pengguna."
     },
     "engineering": {
       "title": "Rekayasa Perangkat Lunak",
       "desc": "Kami membangun perangkat lunak dengan standar tinggi, mulai dari aplikasi sederhana hingga sistem kompleks yang dapat diandalkan."
     }
+  },
+  "works": {
+    "head": "Proyek Kami",
+    "desc": "Kami senang dapat bekerja sama dengan banyak perusahaan hebat dan bangga atas pencapaian yang telah kami raih bersama.",
+    "innovation": {
+      "title": "Proyek Inovasi Digital",
+      "desc": "Kami mengembangkan solusi digital yang berfokus pada kebutuhan pengguna dengan teknologi terkini untuk memberikan pengalaman terbaik."
+    },
+    "business": {
+      "title": "Transformasi Bisnis",
+      "desc": "Kami membantu perusahaan beradaptasi dengan era digital melalui sistem yang efisien, aman, dan mudah digunakan."
+    },
+    "development": {
+      "title": "Pengembangan Produk Modern",
+      "desc": "Kami merancang dan membangun produk digital yang scalable dan siap mendukung pertumbuhan bisnis jangka panjang."
+    },
+    "createive": {
+      "title": "Kolaborasi Kreatif",
+      "desc": "Kami bekerja sama dengan klien untuk menciptakan solusi unik yang sesuai dengan visi, misi, dan tujuan bisnis mereka."
+    }
+  },
+  "about": {
+    "head": "Tentang Kami",
+    "desc": "DEVORA adalah perusahaan pengembang solusi digital yang berfokus pada inovasi dan dampak nyata bagi bisnis. Kami membantu perusahaan bertransformasi di era digital dengan membangun sistem yang efisien, aman, dan mudah digunakan. Dengan pendekatan kolaboratif dan teknologi terkini, DEVORA merancang serta mengembangkan produk digital yang modern, scalable, dan siap mendukung pertumbuhan jangka panjang. Kami percaya bahwa setiap ide hebat layak diwujudkan melalui solusi digital yang kuat dan berkelanjutan."
   }
 }

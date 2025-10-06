@@ -77,9 +77,6 @@ h3 {
   @apply text-2xl md:text-2xl font-semibold mb-2 underline;
 }
 
-h1 {
-  @apply font-[costum] text-left mb-3 md:mb-7 text-xl md:text-center md:text-3xl text-[var(--warning-color)];
-}
 
 /* Main container for the entire footer */
 .footer {
@@ -89,7 +86,7 @@ h1 {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Section for the newsletter call-to-action */
+
 .newsletterSection {
   @apply flex flex-col md:flex-row justify-between items-start md:items-center mb-16 pb-8;
   border-bottom: 1px solid var(--border-color);

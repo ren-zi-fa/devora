@@ -1,5 +1,20 @@
 {
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "OurWork": "Our Work",
+    "expertise": "Our Expertise"
+  },
+  "section": {
+    "main_line": "We help companies build innovative, scalable, and impactful software.",
+    "second_line": "Build Great Digital Solutions",
+    "button": "Get in Touch",
+    "sub_button": "See Our Work"
+  },
   "expertise": {
+    "head": "Our Fields of Expertise",
+    "desc": "We regularly dive deep into a wide range of industries and challenges, including…",
     "chat": {
       "title": "Messaging & Communication",
       "desc": "We build secure and user-friendly messaging platforms that make communication seamless and efficient."
@@ -22,17 +37,42 @@
     }
   },
   "services": {
+    "head": "our services",
     "discovery": {
       "title": "Product Discovery",
       "desc": "We’ve worked with many startups, armed only with an idea and endless enthusiasm. And we’ve helped big companies with equally big ambitions too."
     },
     "design": {
       "title": "Product Design",
-      "desc": "This is what DECODE was founded on, and we love it. Messaging apps, social platforms, mobile banking – we’ve got the experience for any challenge."
+      "desc": "We craft intuitive and visually appealing designs that transform ideas into user-centered digital experiences."
     },
     "engineering": {
       "title": "Software Engineering",
       "desc": "We build software with high standards, from simple apps to complex systems you can rely on."
     }
+  },
+  "works": {
+    "head": "our work",
+    "desc": "We’ve loved working with many fantastic companies, and are really proud of what we’ve achieved together.",
+    "innovation": {
+      "title": "Digital Innovation Projects",
+      "desc": "We develop digital solutions focused on user needs, leveraging the latest technology to deliver the best experience."
+    },
+    "business": {
+      "title": "Business Transformation",
+      "desc": "We help companies adapt to the digital era through efficient, secure, and user-friendly systems."
+    },
+    "development": {
+      "title": "Modern Product Development",
+      "desc": "We design and build scalable digital products ready to support long-term business growth."
+    },
+    "createive": {
+      "title": "Creative Collaboration",
+      "desc": "We collaborate with clients to create unique solutions aligned with their vision, mission, and business goals."
+    }
+  },
+  "about": {
+    "head": "About Us",
+    "desc": "DEVORA is a digital solutions company focused on innovation and delivering real business impact. We help organizations transform in the digital era by building efficient, secure, and user-friendly systems. Through a collaborative approach and the latest technologies, DEVORA designs and develops modern, scalable digital products ready to support long-term growth. We believe that every great idea deserves to be realized through strong and sustainable digital solutions."
   }
 }
